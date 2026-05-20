@@ -1,12 +1,16 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import { getTopCountries, getGlobalStats } from '../lib/data'
+
+const GlobeBackground = dynamic(() => import('../components/GlobeBackground'), { ssr: false })
 
 export default function Home() {
   const countries = getTopCountries(10)
   const stats = getGlobalStats()
 
   return (
-    <div className="heat-bg min-h-screen">
+    <div className="heat-bg min-h-screen relative">
+      <GlobeBackground />
       <Head>
         <title>Ground Up Cloud — AI-Powered Crisis Intelligence</title>
         <meta name="description" content="AI identifies where unemployment creates instability. Gemini scores intervention priority. Infrastructure gets routed where it matters most." />
@@ -14,7 +18,7 @@ export default function Home() {
       </Head>
 
       {/* Nav */}
-      <nav className="border-b border-[--border] px-6 py-4">
+      <nav className="relative z-10 border-b border-[--border] px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="text-xl">🌍</span>
@@ -33,7 +37,7 @@ export default function Home() {
       </nav>
 
       {/* Hero */}
-      <main className="max-w-6xl mx-auto px-6">
+      <main className="relative z-10 max-w-6xl mx-auto px-6">
         <section className="py-20 text-center">
           <div className="inline-block mb-6 px-3 py-1 rounded-full border border-[--border] text-xs mono text-[--accent-warm]">
             Built for the Gemini XPRIZE · Powered by Google Cloud + Gemini

@@ -29,8 +29,8 @@ export default function Home() {
             <a href="#analysis" className="hover:text-white transition">AI Analysis</a>
             <a href="#pricing" className="hover:text-white transition">Pricing</a>
             <a href="https://www.thegroundup.xyz/" target="_blank" className="hover:text-white transition">v1 Site</a>
-            <a href="/dashboard" className="bg-[--accent] hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition">
-              Get API Key
+            <a href="#pricing" className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition">
+              Free API
             </a>
           </div>
         </div>
@@ -168,15 +168,15 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How it works */}
+        {/* How it works — the full loop */}
         <section className="py-16">
           <h2 className="text-3xl font-bold mb-8 text-center">How it works</h2>
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             <div className="text-center">
               <div className="text-4xl mb-3">📡</div>
               <h3 className="font-semibold mb-2">1. Signal</h3>
               <p className="text-[--text-secondary] text-sm">
-                50+ countries tracked. Unemployment, violence, unrest, 
+                50+ countries. Unemployment, violence, unrest, 
                 power, internet, devices, AI access. Updated 4x daily.
               </p>
             </div>
@@ -184,7 +184,7 @@ export default function Home() {
               <div className="text-4xl mb-3">🧠</div>
               <h3 className="font-semibold mb-2">2. Analyze</h3>
               <p className="text-[--text-secondary] text-sm">
-                Gemini scores each country: fuse, access gap, impact, reach. 
+                Gemini scores fuse, access gap, impact, reach. 
                 Ranks intervention priority. Forecasts escalation.
               </p>
             </div>
@@ -193,70 +193,85 @@ export default function Home() {
               <h3 className="font-semibold mb-2">3. Route</h3>
               <p className="text-[--text-secondary] text-sm">
                 Match infrastructure providers with high-impact regions. 
-                Solar, satellite, devices, AI access — routed by AI decision.
+                Providers pay to be matched. Signal stays free.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl mb-3">🤖</div>
+              <h3 className="font-semibold mb-2">4. Enable</h3>
+              <p className="text-[--text-secondary] text-sm">
+                People tap into the agent mesh. They don't train their own AI — 
+                they use existing agents to build businesses and access markets.
               </p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-3">📈</div>
-              <h3 className="font-semibold mb-2">4. Enable</h3>
+              <h3 className="font-semibold mb-2">5. Loop</h3>
               <p className="text-[--text-secondary] text-sm">
-                People build businesses, access markets, create jobs. 
-                They feed data back. The loop compounds.
+                Enabled creators feed data back. More signal, more accuracy, 
+                more investment. Self-reinforcing.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Pricing */}
+        {/* Model — the data is free */}
         <section id="pricing" className="py-16">
-          <h2 className="text-3xl font-bold mb-4 text-center">Pricing</h2>
-          <p className="text-[--text-secondary] text-center mb-10">Intelligence as a service.</p>
+          <h2 className="text-3xl font-bold mb-4 text-center">The data is free.</h2>
+          <p className="text-[--text-secondary] text-center max-w-2xl mx-auto mb-10">
+            Scoring where people are suffering and then charging to see it is the kind of gatekeeping 
+            this project exists to fight. The signal layer is open — always. Revenue comes from the routing.
+          </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-[--bg-secondary] border border-[--border] rounded-xl p-8">
-              <h3 className="font-semibold mb-1">Open</h3>
-              <div className="mono text-[--text-secondary] text-sm mb-4">For researchers & journalists</div>
-              <div className="text-4xl font-bold mb-6">$0<span className="text-lg text-[--text-secondary]">/mo</span></div>
-              <ul className="space-y-2 text-sm text-[--text-secondary] mb-8">
-                <li>✓ Top 10 country rankings</li>
-                <li>✓ Fuse/Access/Impact scores</li>
-                <li>✓ Weekly public briefing</li>
-                <li className="text-[--text-secondary]/50">✗ Gemini deep dives</li>
-                <li className="text-[--text-secondary]/50">✗ API access</li>
-              </ul>
-              <a href="#" className="block text-center border border-[--border] hover:border-[--accent] text-[--text-secondary] hover:text-white py-3 rounded-lg transition">
-                View Dashboard
-              </a>
-            </div>
-
-            <div className="bg-[--bg-secondary] border border-[--accent] rounded-xl p-8 relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[--accent] text-white text-xs font-semibold px-3 py-1 rounded-full">
-                For NGOs
+            <div className="bg-[--bg-secondary] border border-green-500/30 rounded-xl p-8 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Always free
               </div>
-              <h3 className="font-semibold mb-1">Analyst</h3>
-              <div className="mono text-[--text-secondary] text-sm mb-4">For aid agencies & NGOs</div>
-              <div className="text-4xl font-bold mb-6">$99<span className="text-lg text-[--text-secondary]">/mo</span></div>
+              <h3 className="font-semibold mb-1">Signal Layer</h3>
+              <div className="mono text-[--text-secondary] text-sm mb-4">For everyone — researchers, NGOs, journalists, anyone</div>
+              <div className="text-4xl font-bold mb-6">$0<span className="text-lg text-[--text-secondary]">/forever</span></div>
               <ul className="space-y-2 text-sm text-[--text-secondary] mb-8">
                 <li>✓ All 50+ country scores</li>
-                <li>✓ Gemini country deep dives</li>
+                <li>✓ Fuse/Access/Impact scoring</li>
+                <li>✓ Gemini deep-dive analysis</li>
                 <li>✓ Weekly AI briefings</li>
-                <li>✓ API access</li>
+                <li>✓ Full API access</li>
                 <li>✓ Job creation forecasts</li>
               </ul>
-              <a href="#" className="block text-center bg-[--accent] hover:bg-red-600 text-white py-3 rounded-lg font-semibold transition">
-                Start Trial
+              <a href="#" className="block text-center bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-semibold transition">
+                Access Now
+              </a>
+            </div>
+
+            <div className="bg-[--bg-secondary] border border-[--accent-warm] rounded-xl p-8 relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[--accent-warm] text-white text-xs font-semibold px-3 py-1 rounded-full">
+                Marketplace
+              </div>
+              <h3 className="font-semibold mb-1">Provider Network</h3>
+              <div className="mono text-[--text-secondary] text-sm mb-4">For solar, satellite, device, and infra companies</div>
+              <div className="text-4xl font-bold mb-6">10%<span className="text-lg text-[--text-secondary]">/routed contract</span></div>
+              <ul className="space-y-2 text-sm text-[--text-secondary] mb-8">
+                <li>✓ AI-matched to high-impact regions</li>
+                <li>✓ Gemini prioritized leads</li>
+                <li>✓ Deployment feasibility scoring</li>
+                <li>✓ Impact verification</li>
+                <li>✓ Provider reputation system</li>
+              </ul>
+              <a href="#" className="block text-center bg-[--accent-warm] hover:bg-orange-600 text-white py-3 rounded-lg font-semibold transition">
+                Join Network
               </a>
             </div>
 
             <div className="bg-[--bg-secondary] border border-[--border] rounded-xl p-8">
-              <h3 className="font-semibold mb-1">Enterprise</h3>
-              <div className="mono text-[--text-secondary] text-sm mb-4">For governments & multinationals</div>
-              <div className="text-4xl font-bold mb-6">$499<span className="text-lg text-[--text-secondary]">/mo</span></div>
+              <h3 className="font-semibold mb-1">Gov & Multilateral</h3>
+              <div className="mono text-[--text-secondary] text-sm mb-4">Custom deployments for large-scale programs</div>
+              <div className="text-4xl font-bold mb-6">Custom</div>
               <ul className="space-y-2 text-sm text-[--text-secondary] mb-8">
-                <li>✓ Everything in Analyst</li>
-                <li>✓ Custom country coverage</li>
                 <li>✓ Private intelligence feeds</li>
-                <li>✓ Intervention planning</li>
-                <li>✓ Dedicated support</li>
+                <li>✓ Custom country/region coverage</li>
+                <li>✓ Integration with existing systems</li>
+                <li>✓ Intervention planning & monitoring</li>
+                <li>✓ Dedicated analyst support</li>
               </ul>
               <a href="#" className="block text-center border border-[--border] hover:border-[--accent] text-[--text-secondary] hover:text-white py-3 rounded-lg transition">
                 Contact Us
@@ -267,26 +282,21 @@ export default function Home() {
 
         {/* API Preview */}
         <section className="py-16">
-          <h2 className="text-3xl font-bold mb-4 text-center">API Access</h2>
-          <p className="text-[--text-secondary] text-center mb-8">Integrate Ground Up intelligence into your systems.</p>
+          <h2 className="text-3xl font-bold mb-4 text-center">Open API</h2>
+          <p className="text-[--text-secondary] text-center mb-8">Free. No auth needed for the signal layer. Just start building.</p>
           <div className="bg-[--bg-secondary] border border-[--border] rounded-xl p-6 mono text-sm max-w-2xl mx-auto overflow-x-auto">
-            <pre className="text-[--text-secondary]">{`// Get top impact countries
+            <pre className="text-[--text-secondary]">{`// No API key needed. The data is free.
 const res = await fetch(
-  'https://api.groundup.cloud/v1/countries?sort=impact&limit=10',
-  { headers: { 'Authorization': 'Bearer YOUR_KEY' } }
+  'https://api.groundup.cloud/v1/countries?sort=impact&limit=10'
 );
 
-// Response
-{
-  "countries": [
-    {
-      "name": "Djibouti",
-      "scores": { "fuse": 100, "accessGap": 58, "impact": 76 },
-      "pillars": { "power": 65, "internet": 65, "devices": 74, "inference": 16 },
-      "gemini_analysis": "..."
-    }
-  ]
-}`}</pre>
+const { countries } = await res.json();
+
+// Each country includes:
+// - fuse, accessGap, impact, reach scores
+// - pillar breakdown (power, internet, devices, inference)
+// - Gemini-generated analysis & forecasts
+// - Job creation potential estimates`}</pre>
           </div>
         </section>
 

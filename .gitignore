@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build
+.next/
+dist/
+build/
+out/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# GCP
+service-account-key.json
